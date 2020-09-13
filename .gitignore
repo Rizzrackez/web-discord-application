@@ -10,7 +10,7 @@ __pycache__/
 
 # Distribution / packaging
 .Python
-venv/
+discord-web-venv/
 build/
 develop-eggs/
 dist/
@@ -82,8 +82,7 @@ celerybeat-schedule
 *.sage.py
 
 # dotenv
-.env
-
+.discord-web-venv
 # virtualenv
 .venv
 ENV/
