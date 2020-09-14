@@ -1,6 +1,7 @@
 from discord.ext import commands
+import os
 
-DISCORD_TOKEN = ''
+DISCORD_TOKEN = os.getenv('DISCORD_TOKEN')
 
 bot = commands.Bot(command_prefix='!')
 
@@ -10,6 +11,7 @@ async def on_ready():
     print('\n----------------------')
     print(f'Logged in as {bot.user.name}')
     print(f'ID: {bot.user.id}')
+
 
 
 @bot.event
