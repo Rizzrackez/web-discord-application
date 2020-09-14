@@ -1,6 +1,6 @@
 from discord.ext import commands
 
-DISCORD_TOKEN = 'NzU1MDQyNTUwNjAzMzE3Mjg4.X19iLA.lrpT3_Y0yqs2DbcB8vgZDxWh6Qk'
+DISCORD_TOKEN = ''
 
 bot = commands.Bot(command_prefix='!')
 
