@@ -2,7 +2,7 @@ import requests
 import json
 
 channelID = "754713894135660588" # enable dev mode on discord, right-click on the channel, copy ID
-botToken = "NzU0NzM5ODMyMzExMzgyMTI4.X15IPg.RsABdUufR0T4rIDhikRYNvNZN0U"    # get from the bot page. must be a bot, not a discord app
+botToken = "your token"    # get from the bot page. must be a bot, not a discord app
 
 baseURL = "https://discordapp.com/api/channels/{}/messages".format(channelID)
 headers = { "Authorization":"Bot {}".format(botToken),
