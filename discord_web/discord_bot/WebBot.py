@@ -4,7 +4,6 @@ import os
 
 from bot_services import convert_youtube
 
-from bot_services import LIST_NUM
 
 DISCORD_TOKEN = os.getenv('DISCORD_TOKEN')
 
@@ -22,9 +21,6 @@ async def on_ready():
 async def on_message(ctx):
 
     """ctx: "discord_tag"+"discord_command"+"something"""
-
-
-    print(LIST_NUM[0][1])
 
     try:
         content = ctx.content.split('+')
