@@ -4,7 +4,7 @@ from backend.commands.bot_command import create_context_for_test_message, create
 
 BOT_COMMAND = {
     'Тестовое сообщение': create_context_for_test_message,
-    'Конвертация видео с ютуб в m4a файл.': create_context_for_convert_youtube
+    'Конвертация видео с ютуб в m4a файл': create_context_for_convert_youtube
 }
 
 

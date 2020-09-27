@@ -4,6 +4,8 @@ import os
 
 from bot_services import convert_youtube
 
+from bot_services import LIST_NUM
+
 DISCORD_TOKEN = os.getenv('DISCORD_TOKEN')
 
 bot = commands.Bot(command_prefix='!')
@@ -21,14 +23,17 @@ async def on_message(ctx):
 
     """ctx: "discord_tag"+"discord_command"+"something"""
 
+
+    print(LIST_NUM[0][1])
+
     try:
         content = ctx.content.split('+')
         user = bot.get_user(int(content[0]))
 
-        if content[1] == "Тестовое сообщение.":
+        if content[1] == "Тестовое сообщение":
             await user.send(f"Тестовое сообщение пользователю под id {user}.")
 
-        elif content[1] == "Конвертация видео с ютуб в m4a файл.":
+        elif content[1] == "Конвертация видео с ютуб в m4a файл":
             youtube_link = content[2]
             result_str = convert_youtube(youtube_link)
             await user.send(file=discord.File(f"music/{result_str}.m4a"))
