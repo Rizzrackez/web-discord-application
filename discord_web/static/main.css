@@ -4,7 +4,14 @@
 
 #double_arrow {
 	display: none;
+}
 
+.registration
+{
+	margin-top: 10vh;
+	background: #898989;
+	padding: 70px 100px;
+	border-radius: 5px;
 }
 
 .funcText
@@ -96,7 +103,7 @@ body {
 {
 	position: absolute;
 	top: 15vh;
-	background: #DCDCDC;
+	background: #898989;
 	padding: 70px 100px;
 	border-radius: 5px;
 	box-shadow: 0px 0px 10px 0px #000;
