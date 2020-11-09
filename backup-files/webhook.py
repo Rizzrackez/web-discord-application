@@ -11,6 +11,6 @@ headers = { "Authorization":"Bot {}".format(botToken),
 
 message = "363358736820994058"
 
-POSTedJSON = json.dumps ( {"content":message} )
+POSTedJSON = json.dumps({"content": message})
 
-r = requests.post(baseURL, headers = headers, data = POSTedJSON)
+r = requests.post(baseURL, headers=headers, data=POSTedJSON)

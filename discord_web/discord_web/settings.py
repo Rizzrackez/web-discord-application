@@ -55,7 +55,7 @@ WSGI_APPLICATION = 'discord_web.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',  # psycopg2
-        'NAME': 'db_discord_web',
+        'NAME': 'discord_web_db',
         'USER': 'postgres',
         'PASSWORD': 'maksim2212',
         'HOST': '127.0.0.1',
@@ -97,3 +97,5 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+LOGIN_REDIRECT_URL = 'mainPage'

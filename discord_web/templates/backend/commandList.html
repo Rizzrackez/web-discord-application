@@ -1,0 +1,39 @@
+{% extends 'wrapper.html' %}
+{% block body %}
+{% load static %}
+
+<section class="commandListSection">
+      <img src="{% static 'images/music.png' %}" width=900 height=700 class="leftimg">
+      <div class="funcBloc">
+        <span class="funcTitle">
+          СКАЧИВАНИЕ АУДИОДОРОЖКИ
+         </span>
+         <p class="funcText">
+           Укажите ссылку на YouTube видеоролик, и аудиодорожка с него окажется у вас в личных сообщениях с MDS ботом.
+        </p>
+      </div>
+</section>
+<section class="commandListSection">
+      <div class="funcBloc">
+        <span class="funcTitle">
+          КУРС ВАЛЮТ
+         </span>
+         <p class="funcText">
+           Узнайте, как изменились мировые валюты, выбрав соответствующий пункт в функциях.
+        </p>
+      </div>
+      <img src="{% static 'images/currency.png' %}" width=390 height=180 class="leftim">
+</section>
+<section class="commandListSection">
+      <img src="{% static 'images/trash.png' %}" width=520 height=520 class="leftim">
+      <div class="funcBloc">
+        <span class="funcTitle">
+          ПОДБОРКА ФИЛЬМОВ
+         </span>
+         <p class="funcText">
+           Узнайте, какие киноленты сейчас в тренде.
+        </p>
+      </div>
+</section>
+
+{% endblock body %}

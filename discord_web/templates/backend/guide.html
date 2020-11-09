@@ -1,0 +1,28 @@
+{% extends 'wrapper.html' %}
+{% block body %}
+{% load static %}
+    <div class="container-fluid row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+        <ul class="list-unstyled text-center">
+          <li>1. Вступить на сервер Discord по <a class="link" href="https://discord.gg/YFraVse">ссылке</a></li>
+          <br>
+          <li>2. Узнать свой Discord ID
+            <ul class="list-unstyled">
+            <li>->Настройки пользователя</li>
+            <li>->Внешний вид</li>
+            <li>->Расширенные</li>
+            <li>->Активировать режим разработчика</li>
+              <img class="dev-images" src="{% static 'images/dev-mode.jpg' %}" alt="dec-mode"/>
+            <li>->Зайти на сервер MDS</li>
+            <li>->Зайти на голосовой канал check-id</li>
+            <li>->ПКМ на своего пользователя</li>
+            <li>->Копировать ID</li>
+              <img class="checkId-images" src="{% static 'images/check-id.jpg' %}" alt="dec-mode"/>
+          </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4"></div>
+    </div>
+{% endblock body %}

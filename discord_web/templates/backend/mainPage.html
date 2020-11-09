@@ -1,0 +1,21 @@
+{% extends 'wrapper.html' %}
+{% block body %}
+{% load static %}
+
+<div class="home">
+  <img src="{% static 'images/discordBot.svg' %}" width="600" height="450" alt="discordBot.svg">
+  <span class="homeName">MULTITASKING DISCORD SERVICE</span>
+  <section class="funcXY">
+    <img src="{% static 'images/function.png' %}" width="520" height=520 class="leftim" alt="function.png">
+    <div class="funcBloc">
+      <span class="funcTitle">
+        СПЕКТР УСЛУГ
+      </span>
+      <p class="funcText">
+        MDS предоставляет пользователям большой список полезных функций, которые, по нашему мнению, недоступны для большинства обычных сервисов.
+      </p>
+    </div>
+  </section>
+</div>
+
+{% endblock body %}
