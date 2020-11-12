@@ -2,11 +2,11 @@
 {% block body %}
 {% load static %}
 
-<div class="container" style="background: white">
+<div class="container registration">
     <form method="post">
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit">submit</button>
+        <button type="button submit" class="btn btn-primary">Submit</button>
     </form>
 </div>
 
