@@ -16,7 +16,10 @@
           <a class="nav-link navbarText" href="{% url 'guide'%}">Как пользоваться?</a>
           <a class="nav-link navbarText" href="{% url 'command-list' %}">Список возможностей</a>
           <a class="nav-link navbarText" href="{% url 'viewBotCommands'%}">Выбор функции</a>
+<<<<<<< HEAD
           <a class="nav-link navbarText" href="{% url 'user-profile'%}">Регистрация</a>
+=======
+>>>>>>> 301d71d2a8e9bbe76c62b3653fde8da749ed8a40
           {% if user.is_authenticated %}
             <a class="nav-link navbarText" href="{% url 'logout'%}">Выход</a>
           {% else %}
