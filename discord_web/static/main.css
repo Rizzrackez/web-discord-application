@@ -6,6 +6,11 @@
 	display: none;
 }
 
+.imgGui
+{
+    border-radius: 9px;
+}
+
 .registration
 {
 	margin-top: 10vh;
@@ -90,7 +95,7 @@
 
 .link
 {
-	color: red;
+	color: #8f87e8;
 }
 
 body {

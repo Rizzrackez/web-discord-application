@@ -1,28 +1,44 @@
 {% extends 'wrapper.html' %}
 {% block body %}
 {% load static %}
-    <div class="container-fluid row">
-      <div class="col-md-4"></div>
-      <div class="col-md-4">
-        <ul class="list-unstyled text-center">
-          <li>1. Вступить на сервер Discord по <a class="link" href="https://discord.gg/YFraVse">ссылке</a></li>
-          <br>
-          <li>2. Узнать свой Discord ID
-            <ul class="list-unstyled">
-            <li>->Настройки пользователя</li>
-            <li>->Внешний вид</li>
-            <li>->Расширенные</li>
-            <li>->Активировать режим разработчика</li>
-              <img class="dev-images" src="{% static 'images/dev-mode.jpg' %}" alt="dec-mode"/>
-            <li>->Зайти на сервер MDS</li>
-            <li>->Зайти на голосовой канал check-id</li>
-            <li>->ПКМ на своего пользователя</li>
-            <li>->Копировать ID</li>
-              <img class="checkId-images" src="{% static 'images/check-id.jpg' %}" alt="dec-mode"/>
-          </ul>
-          </li>
-        </ul>
+
+<div class="container">
+  <div class="row">
+    <div class="col"></div>
+    <div class="col-10">
+      <br>
+      <h1 class="text-white">Как использовать MDS:</h1>
+      <br><br>
+      <h4 class="text-white">1. Присоединиться Discord серверу:</h4>
+      <p class="text-white">Вступите на сервер MDS по <a class="link" href="https://discord.gg/YFraVse">ссылке</a></p>
+      <br><br>
+      <h4 class="text-white">2. Узнать свой Discord ID:</h4>
+      <p class="text-white">Зайдите в раздел настройки пользователя:</p>
+      <div class="text-center">
+        <img class="imgGui" src="{% static 'images/settings.png' %}" alt="dec-mode"/>
       </div>
-      <div class="col-md-4"></div>
+      <br>
+      <p class="text-white">После этого перейдите во вкладку внешний вид:</p>
+      <div class="text-center">
+        <img class="imgGui" src="{% static 'images/appearance.png' %}" alt="dec-mode"/>
+      </div>
+      <br>
+      <p class="text-white">Далее в пункте с расширенными настройками активируйте режим разработчика:</p>
+      <div class="text-center">
+        <img class="imgGui" src="{% static 'images/dev-mode.png' %}" alt="dec-mode"/>
+      </div>
+      <br>
+      <p class="text-white">Перейдите на сервер MDS и присоединитесь к голосовому каналу</p>
+      <p class="text-white">Теперь вы можете узнать свой ID нажав ПКМ на себя и выбрать пункт "копировать ID"</p>
+      <div class="text-center">
+        <img class="imgGui" src="{% static 'images/getID.png' %}" alt="dec-mode"/>
+      </div>
+      <br><br>
+      <h4 class="text-white">Готово!!! Теперь вы можете пользоваться всеми функциями MDS</h4>
+      <br><br>
+      <br><br>
     </div>
+    <div class="col"></div>
+  </div>
+</div>
 {% endblock body %}
