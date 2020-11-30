@@ -35,6 +35,42 @@
   {% block body %}
 
   {% endblock body %}
-
+  <br>
+  <div class="container text-center text-md-left mt-5 text-white">
+    <div class="row mt-3">
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+        <h6 class="text-uppercase font-weight-bold">Multitasking Discord Service</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>MDS предоставляет пользователям большой список полезных функций, которые,
+          по нашему мнению, недоступны для большинства обычных сервисов.</p>
+      </div>
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+        <h6 class="text-uppercase font-weight-bold">Ссылки</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a class="link" href="https://github.com/Rizzrackez/web-discord-application.git">Github</a>
+        </p>
+        <p>
+          <a class="link" href="{% url 'command-list' %}">Возможности MDS</a>
+        </p>
+        <p>
+          <a class="link" href="#!">Поддержка</a>
+        </p>
+      </div>
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+        <h6 class="text-uppercase font-weight-bold">Контакты</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <i class="fas fa-home mr-3"></i>Saint-Petersburg, Russia</p>
+        <p>
+          <i class="fas fa-envelope mr-3"></i>maksim6info@gmail.com</p>
+        <p>
+          <i class="fas fa-phone mr-3"></i>+7 444 555 33 22</p>
+      </div>
+    </div>
+  </div>
+    <div class="footer-copyright text-center py-3 text-white">© 2020 Copyright:
+      <a class="link" href="{% url 'mainPage'%}">MDS</a>
+    </div>
   </body>
 </html>
