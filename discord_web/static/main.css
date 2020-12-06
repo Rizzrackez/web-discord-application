@@ -155,7 +155,7 @@ body {
 	flex-direction: row;
 }
 
-#id_username, #id_password
+#id_username, #id_password, #id_discord_tag, #id_password1, #id_password2
 {
     display: block;
     width: 100%;

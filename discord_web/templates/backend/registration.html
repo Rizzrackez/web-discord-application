@@ -2,14 +2,22 @@
 {% block body %}
 {% load static %}
 
-<div class="container registration">
-    <form method="post">
-        {% csrf_token %}
-        {{ user_profile_form.as_p }}
-        {{ user_creation_form.as_p }}
-        <button type="button submit" class="btn btn-primary">Submit</button>
-    </form>
-</div>
-<br><br><br>
+<form method="post">
+    <div class="container login-container">
+        <div class="row">
+            <div class="col-md-8 login-form-1">
+
+                <h3>Регистрация</h3>
+                {{ user_profile_form.as_p }}
+                {{ user_creation_form.as_p }}
+                <div class="form-group">
+                    {% csrf_token %}
+                    <input type="submit" class="btnSubmit" value="Подтвердить" />
+                </div>
+
+            </div>
+        </div>
+    </div>
+</form>
 
 {% endblock body %}
