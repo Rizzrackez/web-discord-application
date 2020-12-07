@@ -31,7 +31,7 @@ def _get_img_url(soup, url: str) -> str:
     if req_img.status_code == 200:
         return image_url
     else:
-        return "https://lh3.googleusercontent.com/proxy/5LPAJo0BNOUjNa5x8hZ5eLWVBqkTL2W-RufoifDHvIZ8MtrrIv5ryHizz2SPaiACOIGpq3ZmXCaQ0MfSlZ3Ydi04X3uEK5WiH8ALLD47-Z2cSIEJFEkdiFvOHZuMmu1-d3gF3RxjPa1TprZS_sf19KyTEmAaXmCCQ2VbtyM6cR0OFaDtqTBeyy2xWfcXsH6gcYMG29BJ1oxJgg7KZtz2EnNYXIHYuMThnxwvHtwOuIRplh0GZwLRny-BmwvcMfomPt7siyRIbzbMBJ006gDlDynWA_1sxfr8pKhaSXxIyr7jTau3033r9ChpfZBQ93qM-5aSHdzD3hKLY7hyUKBS7vlZ-VFz-hfqT6YvZCnlHbwytc-kTLsYL_yva73mKm7IdFKSLLrVXi3MrhKjvdak1w"
+        return "https://www.stage1ventures.com/wp-content/uploads/2014/07/no-logo.png"
 
 
 def _get_description(soup, url: str) -> str:

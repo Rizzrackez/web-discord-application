@@ -7,7 +7,7 @@ from django.contrib.auth.forms import UserCreationForm
 class BotInteractionForm(forms.ModelForm):
     class Meta:
         model = BotInteraction
-        fields = ['discord_tag', 'command', 'youtube', 'currency_from', 'currency_to']
+        fields = ['discord_tag', 'command', 'youtube', 'weather','currency_from', 'currency_to']
 
     def __init__(self, *args, **kwargs):
         super(BotInteractionForm, self).__init__(*args, **kwargs)

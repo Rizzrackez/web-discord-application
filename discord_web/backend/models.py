@@ -7,7 +7,8 @@ BOT_COMMANDS = (
     ('Тестовое сообщение', 'Тестовое сообщение'),
     ('Конвертация видео с ютуб в m4a файл', 'Конвертация видео с ютуб в m4a файл'),
     ('Случайный фильм', 'Случайный фильм'),
-    ('Конвертер валют', 'Конвертер валют')
+    ('Погода', 'Погода'),
+    ('Конвертер валют', 'Конвертер валют'),
 )
 
 CURRENCY = (('AED', 'AED'), ('AFN', 'AFN'), ('ALL', 'ALL'), ('AMD', 'AMD'), ('ANG', 'ANG'), ('AOA', 'AOA'),
@@ -39,12 +40,16 @@ CURRENCY = (('AED', 'AED'), ('AFN', 'AFN'), ('ALL', 'ALL'), ('AMD', 'AMD'), ('AN
             ('ZWB', 'ZWB'))
 
 
+CITIES = (("Москва", 'Москва'), ("Санкт-Петербург", 'Санкт-Петербург'), ("Лондон", 'Лондон'))
+
+
 class BotInteraction(models.Model):
     discord_tag = models.CharField(max_length=20)
     youtube = models.CharField(max_length=120, blank=True, null=True)
     command = models.CharField(max_length=100, choices=BOT_COMMANDS, default=1)
     currency_from = models.CharField(max_length=3, choices=CURRENCY, default='USD')
     currency_to = models.CharField(max_length=3, choices=CURRENCY, default='RUB')
+    weather = models.CharField(max_length=20, choices=CITIES, default='Москва')
 
     class Meta:
         verbose_name = "Bot Interaction"

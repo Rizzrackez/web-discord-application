@@ -1,4 +1,4 @@
-from labstack import Client, LabStackError
+from labstack import Client
 
 
 def get_currency(currency_from, currency_to):
