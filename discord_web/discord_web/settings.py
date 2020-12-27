@@ -54,14 +54,11 @@ WSGI_APPLICATION = 'discord_web.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',  # psycopg2
-        'NAME': 'dw_db',
-        'USER': 'postgres',
-        'PASSWORD': 'maksim2212',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
 
 AUTH_PASSWORD_VALIDATORS = [
     {

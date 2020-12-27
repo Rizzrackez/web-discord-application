@@ -11,6 +11,11 @@
     border-radius: 9px;
 }
 
+.footer
+{
+    color: #b7b9bd;
+}
+
 .registration
 {
 	margin-top: 10vh;
@@ -194,7 +199,8 @@ body {
     color:#fff;
 }
 
-.btnSubmit{
+.btnSubmit
+{
     font-weight: 600;
     width: 50%;
     color: #fff;
@@ -202,6 +208,13 @@ body {
     border: none;
     border-radius: 1.5rem;
     padding: 2%;
+
+    transition: background-color .2s linear;
+}
+
+.btnSubmit:hover
+{
+    background-color: #60ad5c;
 }
 
 label
