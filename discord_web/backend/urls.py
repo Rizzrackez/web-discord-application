@@ -1,5 +1,5 @@
 from django.urls import path
-from backend.views import view_bot_commands, view_guide, main_page, command_list, registration
+from backend.views import view_bot_commands, view_guide, main_page, command_list, registration, logout
 from django.contrib.auth import views as auth_views
 
 urlpatterns = [
@@ -10,6 +10,6 @@ urlpatterns = [
 
     path('registration', registration, name='user-profile'),
     path('login', auth_views.LoginView.as_view(template_name="backend/login.html"), name="login"),
-    path('logout', auth_views.LogoutView.as_view(template_name="backend/logout.html"), name="logout"),
+    path('logout', logout, name="logout"),
 
 ]

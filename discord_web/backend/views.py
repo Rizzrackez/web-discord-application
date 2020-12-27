@@ -67,3 +67,7 @@ def registration(request):
     }
 
     return render(request, 'backend/registration.html', context)
+
+
+def logout(request):
+    return redirect('login')
